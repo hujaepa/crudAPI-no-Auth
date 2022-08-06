@@ -18,3 +18,4 @@
 // });
 
 $router->get('/all/product','ProductController@index');
+$router->get('/find/product/{productId}','ProductController@show');
