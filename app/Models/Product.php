@@ -5,5 +5,6 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model 
 {
     protected $table ='table_products';
+    protected $primaryKey = 'product_id';
 	protected $guarded = [];
 }

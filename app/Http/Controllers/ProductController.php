@@ -21,7 +21,8 @@ class ProductController extends Controller
 
     public function show($productId)
     {
-        $product= Product::find($productId);
+        $product = Product::find($productId);
         return response()->json($product);
     }
+    
 }
