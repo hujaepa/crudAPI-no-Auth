@@ -17,5 +17,9 @@
 //     return $router->app->version();
 // });
 
-$router->get('/all/product','ProductController@index');
-$router->get('/find/product/{productId}','ProductController@show');
+$router->get('/','ProductController@index');
+$router->post('/product/add','ProductController@add');
+$router->get('/product/{productId}','ProductController@show');
+$router->post('/product/search','ProductController@search');
+$router->put('/product/update/{id}','ProductController@update');
+$router->delete('/product/delete/{id}','ProductController@delete');

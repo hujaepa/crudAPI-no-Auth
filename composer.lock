@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47521099c6aa9158651794dc365da5b5",
+    "content-hash": "78eb35fa6654148f2f682c1a6cc5dbb0",
     "packages": [
         {
             "name": "brick/math",
@@ -3275,6 +3275,68 @@
                 "source": "https://github.com/opis/closure/tree/3.6.3"
             },
             "time": "2022-01-27T09:35:39+00:00"
+        },
+        {
+            "name": "orumad/lumen-config-cache",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/orumad/lumen-config-cache.git",
+                "reference": "ff2e9b9149decda2ef879256cf29c67e33d3e8c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/orumad/lumen-config-cache/zipball/ff2e9b9149decda2ef879256cf29c67e33d3e8c9",
+                "reference": "ff2e9b9149decda2ef879256cf29c67e33d3e8c9",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^6.0 || ^7.0 || ^8.0",
+                "illuminate/support": "^6.0 || ^7.0 || ^8.0",
+                "php": ">=7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Orumad\\ConfigCache\\ServiceProviders\\ConfigCacheServiceProvider"
+                    ],
+                    "aliases": {
+                        "ConfigCache": "Orumad\\ConfigCache\\Facades\\ConfigCacheFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Orumad\\ConfigCache\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Muñoz",
+                    "email": "dev@danielmunoz.io"
+                }
+            ],
+            "description": "Adds the Laravel command `php artisan config:cache` to Lumen",
+            "homepage": "https://github.com/orumad/lumen-config-cache",
+            "keywords": [
+                "laravel",
+                "laravel-6-package",
+                "laravel-7-package",
+                "laravel-8-package",
+                "lumen",
+                "lumen-config-cache",
+                "orumad"
+            ],
+            "support": {
+                "issues": "https://github.com/orumad/lumen-config-cache/issues",
+                "source": "https://github.com/orumad/lumen-config-cache/tree/1.1.0"
+            },
+            "time": "2022-02-24T10:56:06+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
